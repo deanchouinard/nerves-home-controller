@@ -51,7 +51,6 @@ module.exports = (env, options) => ({
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
           MiniCssExtractPlugin.loader,
           'css-loader'
         ]

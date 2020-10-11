@@ -42,6 +42,7 @@ config :logger,
 
 key = Path.join(System.user_home!(), ".ssh/id_rsa.pub")
 unless File.exists?(key), do: Mix.raise("No SSH Keys found. Please generate an ssh key")
+key2 = Path.join(System.user_home!(), ".ssh/authorized_keys")
 
 key_mgmt = System.get_env("NERVES_NETWORK_KEY_MGMT") || "WPA-PSK"
 
@@ -57,7 +58,8 @@ config :nerves_network, :default,
 
 config :nerves_firmware_ssh,
   authorized_keys: [
-    File.read!(key)
+    File.read!(key),
+    File.read!(key2)
   ]
 
 # Configure nerves_init_gadget.

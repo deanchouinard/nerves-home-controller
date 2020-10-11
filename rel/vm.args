@@ -5,7 +5,8 @@
 ##  for read only filesystem.
 
 # -name hc@0.0.0.0
--setcookie ujurdpopc3b6jfljh4ht2haqqh4js3avkvdkce47l767tuerq256kti5fzw3xuwa
+# -setcookie ujurdpopc3b6jfljh4ht2haqqh4js3avkvdkce47l767tuerq256kti5fzw3xuwa
+-setcookie pecanshortbread
 
 ## Use Ctrl-C to interrupt the current shell rather than invoking the emulator's
 ## break handler and possibly exiting the VM.
